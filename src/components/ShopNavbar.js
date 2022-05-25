@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ShopNavbar = () => {
   return (
     <>
-      <nav class="bg-gray-100 shadow sticky top-0">
+      <nav class="bg-white shadow sticky top-0">
         <div class="container mx-auto px-8 py-4 md:flex md:justify-between md:items-center">
           <div class="flex justify-between items-center">
             <div>

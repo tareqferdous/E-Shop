@@ -124,10 +124,6 @@ const Cart = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="fixed right-0 top-0 mt-16 border-l-2 border-t-2 border-gray-300 bg-gray-100  md:w-24 lg:w-72 h-full shadow-md z-10 hidden md:block">
-
-      </div> */}
     </div>
   );
 };
