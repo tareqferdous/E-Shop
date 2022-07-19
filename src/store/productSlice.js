@@ -7,7 +7,9 @@ const initialState = {
 };
 
 export const getProducts = createAsyncThunk("product/getProducts", async () => {
-  return fetch(`http://localhost:3006/products`).then((res) => res.json());
+  return fetch(`https://tareqferdous.github.io/json-api/Products.json`).then(
+    (res) => res.json()
+  );
 });
 
 export const productSlice = createSlice({

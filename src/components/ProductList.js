@@ -6,16 +6,16 @@ import { getProducts } from "../store/productSlice";
 const ProductList = () => {
   const dispatch = useDispatch();
 
+  const handleAddToCart = (product) => {
+    return () => dispatch(addToCart(product));
+  };
+
   const { products, loading } = useSelector((state) => state.product) || [];
   console.log(products);
 
   useEffect(() => {
     dispatch(getProducts());
   }, []);
-
-  const handleAddToCart = (product) => {
-    return () => dispatch(addToCart(product));
-  };
 
   if (loading) {
     return (
